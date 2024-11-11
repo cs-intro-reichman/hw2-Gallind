@@ -19,7 +19,7 @@ public class Cheers {
                 int yell = Integer.parseInt(args[1]);
                 boolean bANcheck = false;
                 char[] ANcheck = {'A', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'R',
-                'S', 'X'};
+                'S', 'X','a','e','f','h','i','l','m','n','o','r','s','x'};
                 for (int i=0; i<str.length();i++){
                         //System.out.println("Give me " + ());
                         for (char c:ANcheck){
