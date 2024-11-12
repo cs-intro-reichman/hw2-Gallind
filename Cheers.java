@@ -16,6 +16,7 @@ public class Cheers {
                 RUNI!!!
              */
                 String str = args[0];
+                str = str.toUpperCase();
                 int yell = Integer.parseInt(args[1]);
                 boolean bANcheck = false;
                 char[] ANcheck = {'A', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'R',
