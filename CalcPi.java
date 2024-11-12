@@ -11,7 +11,7 @@ public class CalcPi {
 		Double Sum = 1.0;
 		Double Div = 3.0;
 
-		for (int i=0; i<Intervals; i++){
+		for (int i=1; i<Intervals; i++){
 			if (IsAdd){
 				Sum += (1/Div);
 			}
@@ -22,7 +22,7 @@ public class CalcPi {
 			Div += 2;
 		}
 		System.out.println("pi according to Java: " + Math.PI);
-		System.out.println("pi, approximated: " + Sum*4);
+		System.out.println("pi, approximated:     " + Sum*4);
 
 	}
 }
