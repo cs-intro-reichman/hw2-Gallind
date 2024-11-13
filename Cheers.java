@@ -18,22 +18,22 @@ public class Cheers {
                 String str = args[0];
                 str = str.toUpperCase();
                 int yell = Integer.parseInt(args[1]);
-                boolean bANcheck = false;
-                char[] ANcheck = {'A', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'R',
-                'S', 'X','a','e','f','h','i','l','m','n','o','r','s','x'};
-                for (int i=0; i<str.length();i++){
+                boolean bANCheck = false;
+                char[] ANCheck = {'A', 'E', 'F', 'H', 'I', 'L', 'M', 'N', 'O', 'R', 'S', 'X'};
+                for (int i = 0; i < str.length(); i++){
                         //System.out.println("Give me " + ());
-                        for (char c:ANcheck){
-                                if (str.charAt(i)==c){
-                                        bANcheck = true;
+                        for (char c : ANCheck){
+                                if (str.charAt(i) == c){
+                                        bANCheck = true;
                                         break;
                                 }
                         }
-                        System.out.println("Give me " + (bANcheck ? "an ":"a ") + str.charAt(i) + ": " + str.charAt(i) + "!");
-                        bANcheck = false;
+                        System.out.println("Give me " + (bANCheck ? "an " : "a ") + str.charAt(i) + 
+                                           ": " + str.charAt(i) + "!");
+                        bANCheck = false;
                 }
                 System.out.println("What does that spell?");    
-                for (int i=0;i<yell;i++){
+                for (int i = 0; i < yell; i++){
                         System.out.println(str + "!!!");
                 }            
 

@@ -3,17 +3,17 @@ public  class  TestRandom {
 
 	public static void main(String[]  args) {
 	    // Replace this comment with your code
-		double rand = Math.random();
 		int loops = Integer.parseInt(args[0]);
 		int countAbove = 0;
 		for (int i = 0; i < loops; i++){
-			if (Math.random()>0.5) countAbove++;
+			if (Math.random() > 0.5) countAbove++;
 		}
 		System.out.println("> 0.5: " + countAbove + " times");
-		System.out.println("<= 0.5: " + (loops-countAbove) + " times");
-		if (countAbove==loops) System.out.println("there are not enough guesses.");
+		System.out.println("<= 0.5: " + (loops - countAbove) + " times");
+		if (countAbove == loops) System.out.println("there are not enough guesses.");
 		else {
-			System.out.println("Ratio: " + String.valueOf(Double.valueOf(countAbove)/(loops-countAbove)));
+			System.out.println("Ratio: " + String.valueOf(Double.valueOf(countAbove) /
+							   (loops - countAbove)));
 		}
 	}
 }

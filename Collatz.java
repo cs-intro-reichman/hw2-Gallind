@@ -20,19 +20,19 @@ public class Collatz {
 		 */
 
 		 //String Mode = args[1];
-		 boolean BMode = args[1].charAt(0) == 'v';
-		 int Intervals = Integer.parseInt(args[0]);
+		 boolean bMode = args[1].charAt(0) == 'v';
+		 int intervals = Integer.parseInt(args[0]);
 		 int j = 1;
 		 int x = 1;
-		 boolean FirstOne = true;
-		 String MsgLine = "";
+		 boolean firstOne = true;
+		 String msgLine = "";
 		
-		 if (BMode){
-			for (int i = 1; i <= Intervals; i++){
+		 if (bMode){
+			for (int i = 1; i <= intervals; i++){
 				j = i;
-				while (j != 1 || FirstOne){
-					FirstOne = false;
-					MsgLine += String.valueOf(j) + " ";
+				while (j != 1 || firstOne){
+					firstOne = false;
+					msgLine += String.valueOf(j) + " ";
 					if (j % 2 == 0){
 						j = j / 2;
 					}
@@ -41,14 +41,14 @@ public class Collatz {
 					}
 					x++;
 				}
-				MsgLine += "1 (" + x + ")";
-				System.out.println(MsgLine);
-				MsgLine = "";
+				msgLine += "1 (" + x + ")";
+				System.out.println(msgLine);
+				msgLine = "";
 				x = 1;
-				FirstOne = true;
+				firstOne = true;
 			}
 		 }
 		 
-		 System.out.println("Every one of the first " + Intervals + " hailstone sequences reached 1.");
+		 System.out.println("Every one of the first " + intervals + " hailstone sequences reached 1.");
 	}
 }

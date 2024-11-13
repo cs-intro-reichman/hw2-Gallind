@@ -6,23 +6,22 @@ public class CalcPi {
 		pi according to Java: 3.141592653589793
 		pi, approximated: 3.140592653839794
 		*/
-		int Intervals = Integer.parseInt(args[0]);
-		boolean IsAdd = false;
-		Double Sum = 1.0;
-		Double Div = 3.0;
+		int intervals = Integer.parseInt(args[0]);
+		boolean isAdd = false;
+		Double sum = 1.0;
+		Double div = 3.0;
 
-		for (int i=1; i<Intervals; i++){
-			if (IsAdd){
-				Sum += (1/Div);
+		for (int i = 1; i < intervals; i++){
+			if (isAdd){
+				sum += (1 / div);
+			} else {
+				sum -= (1 / div);
 			}
-			else {
-				Sum -= (1/Div);
-			}
-			IsAdd = !IsAdd;
-			Div += 2;
+			isAdd = !isAdd;
+			div += 2;
 		}
 		System.out.println("pi according to Java: " + Math.PI);
-		System.out.println("pi, approximated:     " + Sum*4);
+		System.out.println("pi, approximated:     " + sum * 4);
 
 	}
 }
