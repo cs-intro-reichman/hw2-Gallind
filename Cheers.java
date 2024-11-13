@@ -28,8 +28,7 @@ public class Cheers {
                                         break;
                                 }
                         }
-                        System.out.println("Give me " + (bANCheck ? "an " : "a ") + str.charAt(i) + 
-                                           ": " + str.charAt(i) + "!");
+                        System.out.println("Give me " + (bANCheck ? "an ":"a  ") + str.charAt(i) + ": " + str.charAt(i) + "!");
                         bANCheck = false;
                 }
                 System.out.println("What does that spell?");    
